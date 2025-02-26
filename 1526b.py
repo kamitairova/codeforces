@@ -1,16 +1,16 @@
-def solve(x):
-    max_b = x // 111
-    for b in range(max_b + 1):
-        remaining = x - 111 * b
-        if remaining % 11 == 0:
+def check_number(n):
+    max_value = n // 111
+    for value in range(max_value + 1):
+        remainder = n - 111 * value
+        if remainder % 11 == 0:
             return True
-    return False
+    return 
 
 
-t = int(input())
-for _ in range(t):
-    x = int(input())
-    if solve(x):
+test_cases = int(input())
+for _ in range(test_cases):
+    number = int(input())
+    if check_number(number):
         print("YES")
     else:
         print("NO")
