@@ -32,3 +32,10 @@ t = int(input())
 for _ in range(t):
     pi, qi = map(int, input().split())
     print(find_max_divisor(pi, qi))
+
+
+
+
+
+
+
